@@ -1,16 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Carousel} from 'react-bootstrap';
+import {Carousel, Col, Container, Row, Image} from 'react-bootstrap';
 import red_dining from '../images/apartment.jpg';
 import gray_dining from '../images/boys-bedroom.jpg';
-import headerp from '../images/photo-of-a-bathroom.jpg'
-import { Image } from 'react-bootstrap';
+import headerp from '../images/photo-of-a-bathroom.jpg';
 
 export const Slides = () => (
   <div className="img-fluid">
     <Carousel >
       <Carousel.Item className="img-fluid">
-        <img src={ red_dining } alt="First slide" className="img-fluid" />
+        <img src={ red_dining } alt="First slide" style={{width: 1103, height: 500}} />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -18,9 +17,9 @@ export const Slides = () => (
       </Carousel.Item>
       <Carousel.Item className="img-fluid">
         <img
-          className="img-fluid"
           src={ gray_dining } 
           alt="Third slide"
+          style={{width: 1103, height: 500}}
         />
 
         <Carousel.Caption>
@@ -33,6 +32,7 @@ export const Slides = () => (
           className="img-fluid"
           src={ headerp }
           alt="Third slide"
+          style={{width: 1103, height: 500}}
         />
 
         <Carousel.Caption>
